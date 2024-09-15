@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-Form</title>
+</head>
+<body>
+    <div class="Container">
+        <h1>Travel Reservation Form</h1>
+        <h3>*Denotes mandatory</h3>
+        <form id="registration_Form" method="Post">
+        <label>Full name*:</label><br>
+        <input type="text" name="Full_name" placeholder="FirstName LastName" autofocus="autofocus" value=""><br>
+        <label>Email address*</label><br>
+        <input type="text" name="email_addr" value=""><br>
+        <label">Select Tour Package*:</label><br>
+        <select name="package">
+            <option value="Gao">Gao</option>
+            <option value="Kashmir">Kashmir</option>
+            <option value="Rajasthan">Rajasthan</option>
+        </select><br>
+        <label>Arrival date*:</label><br>
+        <input type="text" name="Arriv_date" placeholder="m/d/y" value=""><br>
+        <label">Number of persons*:</label><br>
+        <input type="text" name="persons" value=""><br>
+        <label>What would you want to avail?*</label><br>
+        boarding<input type="checkbox" name="Facilities[]" value="boarding"><br>
+        Fooding<input type="checkbox" nmae="Facilities[]" value="fooding"><br>
+        sight seeing<input type="checkbox" name="faacilities[]" value="sightseeing"><br>
+        <label>Discount Coupon code:</label>
+        <input type="text"  name="dis_code" value=""><br>
+        <label>Terms and conditions*</label><br>
+        <input type="radio" name="tnc" value="agree" checked>I agree
+        <input type="radio" nmae="tnc" value="disagree">I disagree<br>
+        <button type="submit" class="btn btn-large btn-primary" name="submit">complete reservation</button>
+        </form> 
+    </div>   
+</body>
+</html>
